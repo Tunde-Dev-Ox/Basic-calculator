@@ -35,7 +35,7 @@ body .app .calculator-head .calc-nav {
   height: 100%;
 }
 body .app .calculator-head .calc-nav .logo-wrapper {
-  width: 30px;
+  width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -43,11 +43,11 @@ body .app .calculator-head .calc-nav .logo-wrapper {
 body .app .calculator-head .calc-nav .logo-wrapper .logo {
   width: 100%;
   text-decoration: none;
+  font-family: "Cedarville Cursive", cursive;
+  color: rgb(26, 185, 26);
+  font-size: 23px;
   position: relative;
   cursor: pointer;
-}
-body .app .calculator-head .calc-nav .logo-wrapper .logo img {
-  width: 100%;
 }
 body .app .calculator-head .calc-nav .menu-wrapper {
   width: 50%;
