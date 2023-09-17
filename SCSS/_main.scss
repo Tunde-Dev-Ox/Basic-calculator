@@ -168,7 +168,17 @@ body {
                             }
     
                             .maths-sign {
-                                font-size: 35px;
+                                font-size: 38px;
+                            }
+
+                            .equals {
+                                font-size: 47px;
+                                background-color: rgb(26, 185, 26);
+                                color: #ffffff;
+                                border-radius: 10px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
                             }
                         }
                     }
