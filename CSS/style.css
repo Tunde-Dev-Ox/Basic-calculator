@@ -112,7 +112,7 @@ body .app .calculator-head .calc-nav .menu-wrapper .line {
 .main-calc .container .calculator-body {
   padding-top: 13px;
   background-color: rgba(243, 243, 243, 0.1254901961);
-  flex-grow: 0.67;
+  flex-grow: 0.68;
 }
 .main-calc .container .calculator-body .flex-container {
   border-top: 1px solid rgba(238, 238, 238, 0.1882352941);
