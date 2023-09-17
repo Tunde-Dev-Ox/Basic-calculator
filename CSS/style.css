@@ -1,0 +1,162 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+body .app {
+  width: 100%;
+  height: 100vh;
+}
+body .app .calculator-head {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  z-index: 40;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+body .app .calculator-head .calc-nav {
+  display: flex;
+  max-width: 786px;
+  margin: 0 auto;
+  padding: 0 4vw;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+body .app .calculator-head .calc-nav .logo-wrapper {
+  width: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+body .app .calculator-head .calc-nav .logo-wrapper .logo {
+  width: 100%;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+body .app .calculator-head .calc-nav .logo-wrapper .logo img {
+  width: 100%;
+}
+body .app .calculator-head .calc-nav .menu-wrapper {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 5px;
+}
+body .app .calculator-head .calc-nav .menu-wrapper .line {
+  width: 20px;
+  height: 2px;
+  display: inline-block;
+  background-color: #000;
+}
+
+.main-calc {
+  padding-top: clamp(7rem, 5.75rem + 6.67vw, 9rem);
+  height: 100%;
+}
+.main-calc .container {
+  max-width: 786px;
+  padding: 0 4vw;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main-calc .container .display-outerwrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 30%;
+  overflow: hidden;
+}
+.main-calc .container .display-outerwrapper .display-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-bottom: 14px;
+  padding: 10px;
+  width: 100%;
+}
+.main-calc .container .display-outerwrapper .display-wrapper .calculate-display {
+  font-size: 1.7rem;
+  color: rgb(26, 185, 26);
+  line-height: 1.1;
+  font-weight: 400;
+  width: 100%;
+  text-align: right;
+}
+.main-calc .container .display-outerwrapper .display-wrapper .total {
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #000;
+  width: 100%;
+  text-align: right;
+  letter-spacing: -0.3px;
+}
+.main-calc .container .calculator-body {
+  padding-top: 13px;
+  background-color: rgba(243, 243, 243, 0.1254901961);
+  flex-grow: 1;
+}
+.main-calc .container .calculator-body .flex-container {
+  border-top: 1px solid rgba(238, 238, 238, 0.1882352941);
+  height: 100%;
+}
+.main-calc .container .calculator-body .flex-container .calculator-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  height: 100%;
+  gap: 12px;
+}
+.main-calc .container .calculator-body .flex-container .calculator-flex .flex {
+  display: flex;
+  width: 100%;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.main-calc .container .calculator-body .flex-container .calculator-flex .flex .flex-item {
+  flex: 0 0 22%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.main-calc .container .calculator-body .flex-container .calculator-flex .flex .flex-item .calc-element {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.1;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.main-calc .container .calculator-body .flex-container .calculator-flex .flex .flex-item .operator {
+  color: rgb(26, 107, 37);
+  font-size: 70px;
+}
+.main-calc .container .calculator-body .flex-container .calculator-flex .flex .flex-item .action {
+  color: rgb(14, 204, 0);
+}
+.main-calc .container .calculator-body .flex-container .calculator-flex .flex .flex-item .maths-sign {
+  font-size: 35px;
+}
+
+/*# sourceMappingURL=style.css.map */

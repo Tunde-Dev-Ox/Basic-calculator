@@ -1,0 +1,181 @@
+body {
+ font-family: "Raleway", sans-serif;
+ font-size: 16px;
+ overflow: hidden;
+ background-color: #ffffff;
+
+ .app {
+  width: 100%;
+  height: 100vh;
+
+  .calculator-head {
+   width: 100%;
+   background-color: transparent;
+   position: fixed;
+   top: 0;
+   z-index: 40;
+   height: 60px;
+   display: flex;
+   align-items: center;
+
+   .calc-nav {
+    display: flex;
+    max-width: 786px;
+    margin: 0 auto;
+    padding: 0 4vw;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+
+    .logo-wrapper {
+     width: 30px;
+     display: flex;
+     align-items: flex-start;
+     justify-content: flex-start;
+
+     .logo {
+      width: 100%;
+      text-decoration: none;
+      position: relative;
+      cursor: pointer;
+
+      img {
+       width: 100%;
+      }
+     }
+    }
+
+    .menu-wrapper {
+     width: 50%;
+     display: flex;
+     align-items: flex-end;
+     flex-direction: column;
+     gap: 5px;
+
+     .line {
+      width: 20px;
+      height: 2px;
+      display: inline-block;
+      background-color: #000;
+     }
+    }
+   }
+  }
+ }
+}
+
+
+
+//MAIN BODY
+.main-calc {
+    padding-top: clamp(7rem, 5.75rem + 6.67vw, 9rem);
+    height: 100%;
+
+    .container {
+        max-width: 786px;
+        padding: 0 4vw;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .display-outerwrapper {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            height: 30%;
+            overflow: hidden;
+
+            .display-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+            gap: 12px;
+            margin-bottom: 14px;
+            padding: 10px;
+            width: 100%;
+
+            .calculate-display {
+                font-size: 1.7rem;
+                color: rgb(26, 185, 26);
+                line-height: 1.1;
+                font-weight: 400;
+                width: 100%;
+                text-align: right;
+            }
+
+            .total {
+                font-size: 24px;
+                line-height: 1.1;
+                font-weight: 600;
+                color: #000;
+                width: 100%;
+                text-align: right;
+                letter-spacing: -.3px;
+            }
+        }
+        }
+
+        .calculator-body {
+            padding-top: 13px;
+            background-color: #f3f3f320;
+            flex-grow: 1;
+            
+            .flex-container {
+                border-top: 1px solid #eeeeee30;
+                height: 100%;
+                
+                .calculator-flex {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 1rem;
+                    // padding-bottom: 100%;
+                    height: 100%;
+                    gap: 12px;
+    
+                    .flex {
+                        display: flex;
+                        width: 100%;
+                        gap: 8px;
+                        align-items: center;
+                        justify-content: space-between;
+                        flex-grow: 1;
+    
+                        .flex-item {
+                            flex: 0 0 22%;
+                            align-items: center;
+                            justify-content: center;
+                            display: flex;
+    
+                            .calc-element {
+                                font-size: 25px;
+                                font-weight: 400;
+                                line-height: 1.1;
+                                width: 100%;
+                                text-align: center;
+                                cursor: pointer;
+                            }
+    
+                            .operator {
+                                color: rgb(26, 107, 37);
+                                font-size: 70px;
+                            }
+    
+                            .action {
+                                color: rgb(14, 204, 0);
+                            }
+    
+                            .maths-sign {
+                                font-size: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
